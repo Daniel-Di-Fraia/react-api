@@ -22,7 +22,16 @@ function ActorList() {
 
   return (
     <>
-      
+      <div className="container">
+            <div className="actors">
+                {actors.map((attore) => (
+                    <CardActor
+                        key={attore.id}
+                        attore={attore}
+                    />
+                ))}
+            </div>
+        </div>
     </>
   )
 }
