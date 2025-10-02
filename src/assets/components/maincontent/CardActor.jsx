@@ -1,19 +1,23 @@
+//creiamo un componente a parte per le informazioni degli attori in una card
+
 export default function CardActor(props) {
 
     const { attore } = props;
 
     return (
         <div className="actors" >
+            {/* pics attori */}
             <div className="actor-pic">
                 <img src={attore.image} alt={attore.name} />
             </div>
+            {/* info cards attore */}
             <div className="actor-info">
                 <p>{attore.name}</p>
-                <p>{attore.birth_year}</p>
-                <p>{attore.death_year}</p>
-                <p>{attore.nationality}</p>
-                <p>{attore.biography}</p>
-                <p>{attore.awards}</p>
+                <p><span>- Nato nel: </span>{attore.birth_year}</p>
+                <p><span>- Morto nel: </span>{attore.death_year}</p>
+                <p><span>- Nazionalità: </span>{attore.nationality}</p>
+                <p><span>- Biografia: </span>{attore.biography}</p>
+                <p><span>- Premi: </span>{attore.awards}</p>
             </div>
         </div>
     )

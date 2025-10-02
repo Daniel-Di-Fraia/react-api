@@ -1,4 +1,4 @@
-
+//importiamo il componente ActorList per metterlo nel main
 import ActorList from "./maincontent/ActorList"
 
 function MyMain() {

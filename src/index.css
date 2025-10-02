@@ -1,0 +1,74 @@
+/* Font globale e sfondo */
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: rgb(255, 109, 109);
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Contenitore principale */
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+/* Contenitore attori main pagina */
+.actors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card attore */
+.actors .actors {
+  background-color: #ffdddd;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 220px;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.actors .actors:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Pic attori */
+.actor-pic img {
+  width: 220px;
+  height: 300px;
+}
+
+/* Info attore */
+.actor-info {
+  padding: 12px;
+}
+
+.actor-info p {
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 1.4;
+  padding-right: 20px;
+}
+
+span {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* Nome in evidenza per attore*/
+.actor-info p:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(253, 72, 72);
+}
