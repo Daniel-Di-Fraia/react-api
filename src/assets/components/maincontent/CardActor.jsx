@@ -17,7 +17,8 @@ export default function CardActor(props) {
                 <p><span>- Morto nel: </span>{attore.death_year}</p>
                 <p><span>- Nazionalità: </span>{attore.nationality}</p>
                 <p><span>- Biografia: </span>{attore.biography}</p>
-                <p><span>- Premi: </span>{attore.awards}</p>
+                <p><span>- Premi: </span>{attore.awards.join(" - ")}</p>
+                <p className=""><span>- Famoso per: </span>{attore.known_for.join(" - ")}</p>
             </div>
         </div>
     )
