@@ -16,7 +16,7 @@ h1 {
 .container {
   max-width: 70%;
   margin: 0 auto;
-  /* padding: 20px; */
+  padding-top: 20px;
 }
 
 /* Contenitore attori main pagina */
